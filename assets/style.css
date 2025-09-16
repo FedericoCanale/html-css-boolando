@@ -6,14 +6,14 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;   
-  left: 0;
-  width: 100%;        
-  background-color: var(--dis-orange); 
-  z-index: 1000;      
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dis-orange);
+    z-index: 1000;
 }
-    
+
 
 
 .banner {
@@ -23,7 +23,7 @@ header {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     flex-wrap: nowrap;
-  
+
 
 }
 
@@ -59,136 +59,171 @@ header {
 }
 
 .icons {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-  height: auto;
-  color: var(--dis-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    color: var(--dis-white);
 }
+
 .container-main-1 {
     padding-top: 3rem;
-    display: block
+    display: block;
 
 }
 
 .container-main-2 {
     padding-top: 3rem;
     display: block
-
 }
 
 .product-row {
-  display: flex;       
-  justify-content: center;
-  gap: 20px;           
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 
 }
 
 
 .card {
-  width: 250px;
-  flex: 0 0 250px;
-  border: 1px solid #ddd;
-  background: #fff;
-  font-family: Arial, sans-serif;
+    width: 250px;
+    flex: 0 0 250px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-family: Arial, sans-serif;
 }
 
 
 .card-image {
-  position: relative;
-  width: 100%;
-  height: 300px;
+    position: relative;
+    width: 100%;
+    height: 300px;
 }
 
 
 .card-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .img-hover {
-  display: none;
+    display: none;
 }
 
 
 .card-image:hover .img-default {
-  display: none;
+    display: none;
 }
+
 .card-image:hover .img-hover {
-  display: block;
+    display: block;
 }
 
 
 .card-labels {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  display: flex;
-  gap: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
 }
 
 .label {
-  padding: 3px 6px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .label.red {
-  background: red;
+    background: red;
 }
 
 .label.green {
-  background: green;
+    background: green;
 }
 
 
 .card-info {
-  padding: 10px;
+    padding: 10px;
 }
 
 .brand {
-  font-size: 13px;
-  color: #666;
+    font-size: 13px;
+    color: #666;
 }
 
 .title {
-  font-size: 15px;
-  font-weight: bold;
-  margin: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
 }
 
 .price {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .new-price {
-  color: red;
-  font-weight: bold;
-  margin-right: 10px;
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .old-price {
-  text-decoration: line-through;
-  color: #888;
+    text-decoration: line-through;
+    color: #888;
 }
 
 .card-heart {
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  background: white;
-  padding: 5px 8px;
-  font-size: 18px;
-  color: black;
-  border-left: none; 
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background: white;
+    padding: 5px 8px;
+    font-size: 18px;
+    color: black;
+    border-left: none;
 }
 
 
 .card-heart:hover {
-  color: red;
+    color: red;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--dis-dark);
+    padding-top: 2rem;
+}
+
+.banner-footer {
+
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.nav-bot {
+    font-size: 8px;
+    color: var(--dis-white);
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    padding-top: 0.3rem;
+}
+
+.nav-bot a {
+    text-decoration: none;
+    color: var(--dis-white);
+}
+
+.nav-bot a:hover {
+    color: lightgray;
 }
