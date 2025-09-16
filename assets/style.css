@@ -11,6 +11,7 @@ header {
     background-size: cover;
     padding: 0;
     position: fixed
+    
 }
 
 .banner {
@@ -19,6 +20,7 @@ header {
     justify-content: space-around;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+    flex-wrap: nowrap;
   
 
 }
@@ -61,53 +63,56 @@ header {
   height: auto;
   color: var(--dis-white);
 }
+.container-main {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+.product-row {
+  display: flex;       
+  justify-content: center;
+  gap: 20px;           
+  padding: 20px;
+}
 
 
 .card {
-  width: 280px;
-  font-family: Arial, sans-serif;
+  width: 250px;
   border: 1px solid #ddd;
   background: #fff;
-  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
 
 .card-image {
   position: relative;
   width: 100%;
-  height: 400px;
-  overflow: hidden;
+  height: 300px;
 }
 
 
 .card-image img {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.3s ease;
 }
 
 .img-hover {
-  opacity: 0;
+  display: none;
 }
 
-.card-image:hover .img-hover {
-  opacity: 1;
-}
+
 .card-image:hover .img-default {
-  opacity: 0;
+  display: none;
 }
-
-.card-heart {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: white;
-  padding: 5px 8px;
-  font-size: 18px;
-  cursor: pointer;
+.card-image:hover .img-hover {
+  display: block;
 }
 
 
@@ -120,11 +125,10 @@ header {
 }
 
 .label {
-  padding: 4px 6px;
+  padding: 3px 6px;
   font-size: 12px;
   font-weight: bold;
-  color: white;
-  border-radius: 3px;
+  color: #fff;
 }
 
 .label.red {
@@ -134,6 +138,7 @@ header {
 .label.green {
   background: green;
 }
+
 
 .card-info {
   padding: 10px;
@@ -164,11 +169,3 @@ header {
   text-decoration: line-through;
   color: #888;
 }
-.container-main {
-    padding-top: 5rem;
-    pa
-
-}
-
-
-
